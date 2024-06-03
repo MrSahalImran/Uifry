@@ -54,7 +54,7 @@ const Hero = () => {
         </div>
       </div>
       <div
-        className="w-full md:w-1/2 relative hidden md:block iphone-images"
+        className="w-full md:w-1/2 md:relative hidden sm:absolute md:block iphone-images"
         style={{
           backgroundImage: `url(/assets/images/loop.png)`,
           backgroundRepeat: "no-repeat",
