@@ -1,136 +1,115 @@
-import { featuresPoints } from "@/constants";
 import Image from "next/image";
-import React from "react";
 
 const Advantages = () => {
   return (
     <>
-      <section className="w-screen flex h-screen p-10 pt-20 mt-20">
-        <div className="w-1/2 flex z-10  p-20 relative overflow-hidden flex-col">
-          <h2 className="uppercase text-[18px] font-medium text-orange-500">
-            advantages
-          </h2>
-          <h1 className="capitalize text-[48px] font-bold tracking-tighter">
-            why choose Uifry?
-          </h1>
-          <div className="flex items-center gap-5 mb-3 mt-5">
-            <Image
-              src="/assets/images/Bell.png"
-              alt="Bell"
-              width={40}
-              height={10}
-            />
-            <h3 className="tracking-tighter text-[28px] font-semibold">
-              Clever Notifications
-            </h3>
+      <section className="w-screen container flex flex-col md:flex-row md:p-10 pt-5 md:pt-20 mt-20">
+        <div className="w-full md:w-1/2 relative">
+          <div className="w-full md:w-3/4 flex flex-col p-5 md:p-10">
+            <h2 className="uppercase text-[18px] font-medium text-orange-500">
+              advantages
+            </h2>
+            <h1 className="capitalize text-[32px] md:text-[48px] font-bold tracking-tighter mt-5">
+              why choose Uifry?
+            </h1>
+            <div className="flex items-center gap-3 md:gap-5 mb-3 mt-3 md:mt-5">
+              <Image
+                src="/assets/images/Bell.png"
+                alt="Bell"
+                width={40}
+                height={40}
+              />
+              <h3 className="tracking-tighter text-[22px] md:text-[28px] font-semibold">
+                Clever Notifications
+              </h3>
+            </div>
+            <p className="text-gray-700 text-[14px] md:text-[18px] mt-3 md:mt-5 font-medium">
+              Arcu at dictum sapien, mollis. Vulputate sit id accumsan,
+              ultricies. In ultrices malesuada elit mauris etiam odio. Duis
+              tristique lacus, et blandit viverra nisl velit. Sed mattis
+              rhoncus, diam suspendisse sit nunc, gravida eu. Lectus eget eget
+              ac dolor neque lorem sapien, suspendisse aliquam.
+            </p>
           </div>
-          <p className="text-gray-700 text-[18px] mt-5 font-medium">
-            Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies.
-            In ultrices malesuada elit mauris etiam odio. Duis tristique lacus,
-            et blandit viverra nisl velit. Sed mattis rhoncus, diam suspendisse
-            sit nunc, gravida eu. Lectus eget eget ac dolor neque lorem sapien,
-            suspendisse aliquam.
-          </p>
         </div>
-        <div
-          className="w-1/2 relative"
-          style={{
-            backgroundImage: `url(/assets/images/loop.png)`,
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center bottom  ",
-          }}
-        >
-          <div>
+        <div className="w-full md:w-1/2 relative">
+          <div className="hidden md:block">
             <Image
               src={"/assets/star.svg"}
-              alt="iPhone"
-              width={50}
-              height={50}
-              className="absolute z-20 top-[12rem] left-10 rotate-[20deg]"
-            />
-            <Image
-              src="/assets/images/glow.png"
-              alt="glow"
-              width={600}
-              height={500}
-              className="absolute z-20 top-[6rem] left-30 rotate-[15deg]"
+              alt="Star"
+              width={40}
+              height={40}
+              className="absolute z-20 top-1/4 left-0 rotate-[20deg]"
             />
           </div>
-          <Image
-            src={"/assets/images/iPhone1.png"}
-            alt="iPhone"
-            width={400}
-            height={20}
-            className="absolute z-20 top-[4rem] left-36 rotate-[15deg]"
-          />
-          <Image
-            src="/assets/images/Toast.png"
-            alt="toast"
-            width={350}
-            height={0}
-            className="absolute z-20 top-[17rem] left-72 "
-          />
+          <div className="md:hidden">
+            <Image
+              src={"/assets/images/phonePop.png"}
+              alt="iPhone"
+              width={600}
+              height={20}
+              className="absolute z-20 top-[0rem] left-0 rotate-[0deg]"
+            />
+          </div>
+          <div className="hidden md:block">
+            <Image
+              src={"/assets/images/phonePop.png"}
+              alt="iPhone"
+              width={600}
+              height={20}
+              className="absolute z-20 top-[0rem] left-0 rotate-[0deg]"
+            />
+          </div>
         </div>
       </section>
-      <section className="w-screen flex h-screen p-10 pt-20 mt-20">
-        <div
-          className="w-1/2 relative"
-          style={{
-            backgroundImage: `url(/assets/images/loop.png)`,
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center bottom  ",
-          }}
-        >
-          <div>
+
+      <section className="w-screen container flex flex-col md:flex-row md:p-10 pt-5 md:pt-20 mt-20 relative">
+        <div className="w-full md:w-1/2 relative order-2 md:order-1">
+          <div className="hidden md:block">
             <Image
               src={"/assets/star.svg"}
-              alt="iPhone"
-              width={50}
-              height={50}
-              className="absolute z-20 top-[12rem] left-10 rotate-[20deg]"
-            />
-            <Image
-              src="/assets/images/glow.png"
-              alt="glow"
-              width={600}
-              height={500}
-              className="absolute z-20 top-[6rem] left-30 rotate-[15deg]"
-            />
-          </div>
-          <Image
-            src={"/assets/images/iPhone2.png"}
-            alt="iPhone"
-            width={450}
-            height={20}
-            className="absolute z-20 top-[2rem] left-28 rotate-[15deg]"
-          />
-          <Image
-            src="/assets/images/CreditCard.png"
-            alt="toast"
-            width={300}
-            height={0}
-            className="absolute z-20 top-[12rem] left-[14.5rem] "
-          />
-        </div>
-        <div className="w-1/2 flex z-10  p-20 relative overflow-hidden flex-col">
-          <div className="flex items-center gap-5 mb-3 mt-5">
-            <Image
-              src="/assets/images/Bell.png"
-              alt="Bell"
+              alt="Star"
               width={40}
-              height={10}
+              height={40}
+              className="absolute z-20 top-1/24 left-[2rem] rotate-[20deg]"
             />
-            <h3 className="tracking-tighter text-[28px] font-semibold">
-              Full Customization
-            </h3>
           </div>
-          <p className="text-gray-700 text-[18px] mt-5 font-medium">
-            Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies.
-            In ultrices malesuada elit mauris etiam odio. Duis tristique lacus,
-            et blandit viverra nisl velit. Sed mattis rhoncus, diam suspendisse
-            sit nunc, gravida eu. Lectus eget eget ac dolor neque lorem sapien,
-            suspendisse aliquam.
-          </p>
+          <div className="hidden md:block">
+            <Image
+              src={"/assets/images/phoneFull.png"}
+              alt="iPhone"
+              width={700}
+              height={20}
+              className="absolute z-20 -top-[5rem]  "
+            />
+          </div>
+          <div className="md:hidden">
+            {/* Empty div or null, effectively removing the image */}
+            {/* You can also remove the surrounding div if not needed */}
+            <div></div>
+          </div>
+        </div>
+        <div className="w-full mt-8 md:mt-0 md:w-1/2 relative order-1 md:order-2">
+          <div className="w-full md:w-3/4 flex flex-col p-5 md:p-10">
+            <div className="flex sm:mt-20 mt items-center gap-3 md:gap-5 mb-3 mt-3 md:mt-5">
+              <Image
+                src="/assets/images/Bell.png"
+                alt="Bell"
+                width={40}
+                height={40}
+              />
+              <h3 className="tracking-tighter text-[28px] font-semibold">
+                Full Customization
+              </h3>
+            </div>
+            <p className="text-gray-700 right-0 text-[14px] md:text-[18px] mt-1 md:mt-5 font-medium">
+              Arcu at dictum sapien, mollis. Vulputate sit id accumsan,
+              ultricies. In ultrices malesuada elit mauris etiam odio. Duis
+              tristique lacus, et blandit viverra nisl velit. Sed mattis
+              rhoncus, diam suspendisse sit nunc, gravida eu. Lectus eget eget
+              ac dolor neque lorem sapien, suspendisse aliquam.
+            </p>
+          </div>
         </div>
       </section>
     </>
